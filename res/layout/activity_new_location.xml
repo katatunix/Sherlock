@@ -1,0 +1,106 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".NewLocationActivity" >
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textViewLocation_For"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10sp"
+                android:text="@string/for_sth"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <fragment
+                android:id="@+id/locationMapFrag"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                class="com.google.android.gms.maps.MapFragment" />
+            
+            <ProgressBar
+                android:id="@+id/progressBarDetectLocation"
+                style="?android:attr/progressBarStyleLarge"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/editText_Location_Description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/desc_of_location"
+                android:inputType="textCapSentences|textMultiLine" />
+
+            <Button
+                android:id="@+id/button_DetectLocation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/detect_current_location"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/editText_Location_Note"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/note_about_the_location"
+                android:inputType="textCapSentences|textMultiLine" />
+
+            <TextView
+                android:id="@+id/textView_LocItem_Time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/textView_Datetime_Hint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/time_format"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/editText_Location_Time"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/leave_blank_to_use_current_time"
+                android:inputType="datetime" />
+
+            <Button
+                android:id="@+id/buttonTakePhoto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10sp"
+                android:text="@string/take_a_photo"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:id="@+id/imageView_NewLocation_Photo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="10sp" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

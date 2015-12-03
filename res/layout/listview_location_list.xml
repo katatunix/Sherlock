@@ -1,0 +1,55 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:padding="5dp" >
+
+    <TextView
+        android:id="@+id/textView_LocItem_Time"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="3dp"
+        android:layout_toLeftOf="@+id/imageView_LocItem_Photo"
+        
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView_LocItem_Desc"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView_LocItem_Time"
+        android:layout_marginRight="3dp"
+        android:layout_toLeftOf="@+id/imageView_LocItem_Photo"
+        android:ellipsize="end"
+        android:singleLine="true"
+        
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView_LocItem_Note"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/textView_LocItem_Desc"
+        android:layout_marginRight="3dp"
+        android:layout_toLeftOf="@+id/imageView_LocItem_Photo"
+        android:ellipsize="end"
+        android:singleLine="true"
+        
+        android:textSize="15sp" />
+
+    <ImageView
+        android:id="@+id/imageView_LocItem_Photo"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:scaleType="centerCrop"
+        android:contentDescription="@string/photo_of_location"
+        android:src="@drawable/ic_no_photo" />
+
+</RelativeLayout>

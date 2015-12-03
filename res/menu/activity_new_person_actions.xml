@@ -1,0 +1,12 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/action_new_person_done"
+          android:icon="@drawable/ic_action_accept"
+          android:title="@string/done"
+          android:showAsAction="ifRoom" />
+    
+    <item android:id="@+id/action_new_person_cancel"
+          android:icon="@drawable/ic_action_cancel"
+          android:title="@string/cancel"
+          android:showAsAction="ifRoom" />
+</menu>

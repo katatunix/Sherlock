@@ -1,0 +1,33 @@
+Microsoft Windows [Version 6.2.9200]
+(c) 2012 Microsoft Corporation. All rights reserved.
+
+D:\DevTools\adt-bundle-windows-x86-20130917\projects\Sherlock\tools>keytool -list -v -alias androiddebugkey -keystore .\
+debug.keystore -storepass android -keypass android
+Alias name: androiddebugkey
+Creation date: Nov 9, 2013
+Entry type: PrivateKeyEntry
+Certificate chain length: 1
+Certificate[1]:
+Owner: CN=Android Debug, O=Android, C=US
+Issuer: CN=Android Debug, O=Android, C=US
+Serial number: 5c2d86aa
+Valid from: Sat Nov 09 16:45:34 ICT 2013 until: Mon Nov 02 16:45:34 ICT 2043
+Certificate fingerprints:
+         MD5:  E4:F9:46:09:FA:F9:74:4A:D7:C5:C9:36:6A:2B:48:76
+         SHA1: 87:D3:DA:2F:33:96:E8:CA:F2:2A:23:34:EC:06:B4:6E:33:E8:A2:03
+         SHA256: 74:0E:0B:DE:C8:B0:18:B7:CF:9A:D2:43:A5:B9:F8:F4:A9:09:DE:DB:1E:87:80:A4:A9:9B:1F:BC:B8:6F:68:D0
+         Signature algorithm name: SHA256withRSA
+         Version: 3
+
+Extensions:
+
+#1: ObjectId: 2.5.29.14 Criticality=false
+SubjectKeyIdentifier [
+KeyIdentifier [
+0000: A1 38 BA 5C 30 79 4B F9   63 1B 59 33 C5 CB 47 8C  .8.\0yK.c.Y3..G.
+0010: 64 87 C5 6D                                        d..m
+]
+]
+
+
+D:\DevTools\adt-bundle-windows-x86-20130917\projects\Sherlock\tools>
